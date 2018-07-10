@@ -318,7 +318,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 kext-dev-mode=1 keepsyms=1 -lilubetaall -alcbeta</string>
+		<string>nv_disable=1 dart=0 kext-dev-mode=1 -lilubetaall -alcbeta</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -358,14 +358,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>layout-id=3</string>
+				<string>layout-id=2</string>
 				<key>Device</key>
 				<string>HDA</string>
 				<key>Key</key>
 				<string>layout-id</string>
 				<key>Value</key>
 				<data>
-				AwAAAA==
+				AgAAAA==
 				</data>
 			</dict>
 			<dict>
@@ -551,8 +551,6 @@
 		<array>
 			<string>Preboot</string>
 		</array>
-		<key>Language</key>
-		<string>es:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>Enabled</key>
@@ -569,10 +567,8 @@
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>tonymacx86</string>
+		<string>BGM</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -876,6 +872,10 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>#ProductName-MacBook8</key>
+		<string>MacBook8,1</string>
+		<key>#ProductName-MacBookAir7</key>
+		<string>MacBookAir7,1</string>
 		<key>BiosReleaseDate</key>
 		<string>04/09/2018</string>
 		<key>BiosVendor</key>
@@ -887,7 +887,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C025221044NF9H0FB</string>
+		<string>C02635700OPDNJK1H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -915,9 +915,7 @@
 		<key>ProductName</key>
 		<string>MacBookPro12,1</string>
 		<key>SerialNumber</key>
-		<string>C02PT2D1H1DP</string>
-		<key>SmUUID</key>
-		<string>D2E27623-1B9F-42A8-87B2-5D3E10959154</string>
+		<string>C02S91WUH1DP</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
