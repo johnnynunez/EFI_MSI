@@ -568,7 +568,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>BGM</string>
+		<string>Xiaomi</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -887,7 +887,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02635700OPDNJK1H</string>
+		<string>C02713101J9FF4HUE</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -915,7 +915,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro12,1</string>
 		<key>SerialNumber</key>
-		<string>C02S91WUH1DP</string>
+		<string>C02TH25BH1DP</string>
+		<key>SmUUID</key>
+		<string>67D1368E-DBBE-4D39-8C3B-054F075B22DB</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
