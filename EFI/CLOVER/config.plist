@@ -318,7 +318,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 kext-dev-mode=1 -lilubetaall -alcbeta</string>
+		<string>dart=0 nv_disable=1 igfxrst=1 -alcbeta -lilubetaall ngfxsubmit=0 kext-dev-mode=1</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -494,10 +494,79 @@
 			<key>Inject</key>
 			<integer>4</integer>
 		</dict>
-		<key>FakeID</key>
+		<key>Properties</key>
 		<dict>
-			<key>IntelGFX</key>
-			<string>0x16268086</string>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AwASFg==
+				</data>
+				<key>framebuffer-con0-busid</key>
+				<integer>0</integer>
+				<key>framebuffer-con0-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con0-flags</key>
+				<integer>560</integer>
+				<key>framebuffer-con0-index</key>
+				<integer>0</integer>
+				<key>framebuffer-con0-pipe</key>
+				<integer>8</integer>
+				<key>framebuffer-con0-type</key>
+				<integer>2</integer>
+				<key>framebuffer-con1-busid</key>
+				<integer>5</integer>
+				<key>framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con1-flags</key>
+				<integer>1287</integer>
+				<key>framebuffer-con1-index</key>
+				<integer>1</integer>
+				<key>framebuffer-con1-pipe</key>
+				<integer>11</integer>
+				<key>framebuffer-con1-type</key>
+				<integer>1024</integer>
+				<key>framebuffer-con2-busid</key>
+				<integer>4</integer>
+				<key>framebuffer-con2-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con2-flags</key>
+				<integer>1287</integer>
+				<key>framebuffer-con2-index</key>
+				<integer>2</integer>
+				<key>framebuffer-con2-pipe</key>
+				<integer>11</integer>
+				<key>framebuffer-con2-type</key>
+				<integer>1024</integer>
+				<key>framebuffer-con3-busid</key>
+				<integer>6</integer>
+				<key>framebuffer-con3-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con3-flags</key>
+				<integer>6</integer>
+				<key>framebuffer-con3-index</key>
+				<integer>3</integer>
+				<key>framebuffer-con3-pipe</key>
+				<integer>3</integer>
+				<key>framebuffer-con3-type</key>
+				<integer>2048</integer>
+				<key>framebuffer-fbmem</key>
+				<integer>22020096</integer>
+				<key>framebuffer-memorycount</key>
+				<integer>3</integer>
+				<key>framebuffer-mobile</key>
+				<integer>1</integer>
+				<key>framebuffer-patch-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-pipecount</key>
+				<integer>3</integer>
+				<key>framebuffer-portcount</key>
+				<integer>4</integer>
+				<key>framebuffer-stolenmem</key>
+				<integer>35651584</integer>
+				<key>framebuffer-unifiedmem</key>
+				<integer>1610612736</integer>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -586,8 +655,6 @@
 			<key>NVidia</key>
 			<true/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x16260006</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -645,7 +712,7 @@
 				<key>Comment</key>
 				<string>0x16260006,0x16260004/etc, 32MB BIOS, 19MB framebuffer, 9MB cursor bytes (credit RehabMan)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				AAAgAgAAUAE=
@@ -859,6 +926,24 @@
 				AgQJAAAIAACCAAAA/wA=
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>1536mb-2048</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AQMEAwAAIAIAAFABAAAAYA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelBDWGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AQMEAwAAIAIAAFABAAAAgA==
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -887,7 +972,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02713101J9FF4HUE</string>
+		<string>C02619404CDDNJJJA</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -915,9 +1000,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro12,1</string>
 		<key>SerialNumber</key>
-		<string>C02TH25BH1DP</string>
+		<string>C02RQRVFH1DP</string>
 		<key>SmUUID</key>
-		<string>67D1368E-DBBE-4D39-8C3B-054F075B22DB</string>
+		<string>6918482A-1CF8-45EF-AEDF-954DC5C3DA19</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
