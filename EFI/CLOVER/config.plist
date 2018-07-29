@@ -330,6 +330,16 @@
 	<string>This file is for Broadwell graphics that require FakeID=0x16268086</string>
 	<key>Devices</key>
 	<dict>
+		<key>Properties</key>
+        	<dict>
+            <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+            <dict>
+                <key>AAPL,ig-platform-id</key>
+                <data>AwASFg==</data>
+                <key>disable-external-gpu</key>
+                <data>AQAAAA==</data>
+            </dict>
+        </dict>
 		<key>#AddProperties</key>
 		<array>
 			<dict>
